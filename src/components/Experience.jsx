@@ -3,25 +3,44 @@ import './Experience.css'
 
 const experiences = [
   {
-    role: 'Cloud Engineer',
-    company: 'Current Company',
+    role: 'Software Engineer 3',
+    company: 'GitHub',
     period: '2023 – Present',
-    description: 'Designing and managing cloud infrastructure on AWS/Azure. Implementing Terraform modules, CI/CD pipelines, and Kubernetes deployments for production workloads.',
-    tech: ['AWS', 'Terraform', 'Kubernetes', 'GitHub Actions'],
+    location: '',
+    description: 'Working as a Software Engineer 3 at GitHub, contributing to cloud infrastructure and platform engineering initiatives.',
+    tech: ['GitHub', 'Cloud', 'Infrastructure', 'Platform Engineering'],
+  },
+  {
+    role: 'Multi-Cloud Engineer',
+    company: 'Trigent Software Ltd',
+    period: 'Jan 2023 – 2023',
+    location: 'Bengaluru, India',
+    description: 'Leveraging AWS and Azure to support AI projects advancing healthcare and e-commerce technology. Designed PostgreSQL and MongoDB databases on VMs, deployed Kubernetes clusters for parallel scraping jobs, automated infrastructure with Terraform, and implemented CloudWatch monitoring for AWS Workspaces across multiple regions.',
+    tech: ['AWS', 'Azure', 'Terraform', 'Kubernetes', 'PostgreSQL', 'MongoDB', 'CloudWatch', 'GitHub'],
+  },
+  {
+    role: 'Senior Software Engineer – AWS Cloud',
+    company: 'UST Global',
+    period: 'Feb 2022 – Jan 2023',
+    location: 'Bengaluru, India',
+    description: 'Designed scalable AWS cloud architectures, automated deployments using CloudFormation and CI/CD pipelines, led cloud migration of legacy applications reducing operational costs, and conducted security audits enforcing compliance best practices.',
+    tech: ['AWS', 'CloudFormation', 'Jenkins', 'CI/CD', 'Git', 'SSH'],
   },
   {
     role: 'DevOps Engineer',
-    company: 'Previous Company',
-    period: '2021 – 2023',
-    description: 'Built automated deployment pipelines, containerized microservices, and established monitoring/alerting systems for distributed applications.',
-    tech: ['Docker', 'Jenkins', 'Ansible', 'Prometheus'],
+    company: 'Concentrix',
+    period: 'Nov 2019 – Jan 2022',
+    location: 'Bengaluru, India',
+    description: 'Built and managed CI/CD pipelines, containerized applications, and maintained cloud infrastructure supporting enterprise operations.',
+    tech: ['Docker', 'Jenkins', 'Azure DevOps', 'Linux', 'Shell Scripting'],
   },
   {
-    role: 'Systems Engineer',
-    company: 'First Company',
-    period: '2019 – 2021',
-    description: 'Managed Linux infrastructure, implemented configuration management, and supported cloud migration initiatives.',
-    tech: ['Linux', 'Python', 'Azure', 'Shell Scripting'],
+    role: 'Unix Administrator',
+    company: 'HGS',
+    period: 'Dec 2018 – Nov 2019',
+    location: 'Bengaluru, India',
+    description: 'Managed Unix/Linux infrastructure, performed system administration, and supported production environments.',
+    tech: ['Linux', 'Shell Scripting', 'Nagios', 'Apache'],
   },
 ]
 
@@ -51,7 +70,7 @@ function Experience() {
               <div className="timeline-content">
                 <span className="timeline-period">{exp.period}</span>
                 <h3 className="timeline-role">{exp.role}</h3>
-                <p className="timeline-company">{exp.company}</p>
+                <p className="timeline-company">{exp.company} • {exp.location}</p>
                 <p className="timeline-description">{exp.description}</p>
                 <div className="timeline-tech">
                   {exp.tech.map(t => (

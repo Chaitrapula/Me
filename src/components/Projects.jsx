@@ -4,24 +4,24 @@ import './Projects.css'
 
 const projects = [
   {
-    title: 'Cloud Infrastructure Automation',
-    description: 'Automated multi-account AWS infrastructure provisioning using Terraform modules with state management and drift detection.',
-    tech: ['Terraform', 'AWS', 'Python', 'S3'],
-    github: '#',
+    title: 'AI-Powered Healthcare Platform (AWS + Azure)',
+    description: 'Multi-cloud infrastructure supporting AI innovation in healthcare using Kubernetes for parallel scraping, PostgreSQL/MongoDB databases, and Terraform-automated deployments.',
+    tech: ['AWS', 'Azure', 'Kubernetes', 'Terraform', 'PostgreSQL'],
+    github: 'https://github.com/Chaitrapula',
     live: '#',
   },
   {
-    title: 'Kubernetes Platform',
-    description: 'Production-grade Kubernetes platform with GitOps deployment, auto-scaling, and comprehensive observability stack.',
-    tech: ['Kubernetes', 'ArgoCD', 'Prometheus', 'Grafana'],
-    github: '#',
+    title: 'AWS Workspaces Multi-Region Management',
+    description: 'Led troubleshooting and monitoring across multiple regions, implementing CloudWatch metrics and alerting systems to minimize downtime and improve reliability.',
+    tech: ['AWS Workspaces', 'CloudWatch', 'VPC', 'NAT Gateway'],
+    github: 'https://github.com/Chaitrapula',
     live: '#',
   },
   {
-    title: 'CI/CD Pipeline Framework',
-    description: 'Reusable CI/CD pipeline templates supporting multi-language builds, security scanning, and automated deployments.',
-    tech: ['GitHub Actions', 'Docker', 'Trivy', 'Helm'],
-    github: '#',
+    title: 'Cloud Migration & CI/CD Automation',
+    description: 'Migrated legacy applications to AWS cloud, automated deployments using CloudFormation and CI/CD pipelines, reducing operational costs and improving release efficiency.',
+    tech: ['CloudFormation', 'Jenkins', 'AWS', 'CI/CD'],
+    github: 'https://github.com/Chaitrapula',
     live: '#',
   },
 ]

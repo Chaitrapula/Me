@@ -1,4 +1,4 @@
-import { FiArrowDown, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
+import { FiArrowDown, FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 import './Hero.css'
 
@@ -6,11 +6,20 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
+        <motion.div
+          className="hero-avatar"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          <img src="/profile.jpg" alt="Chaitra Pula" />
+        </motion.div>
+
         <motion.p
           className="hero-greeting"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
           Hello, I'm
         </motion.p>
@@ -18,9 +27,9 @@ function Hero() {
           className="hero-name"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
         >
-          Chaitra
+          Chaitra Pula
         </motion.h1>
         <motion.h2
           className="hero-title"
@@ -28,7 +37,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Cloud Engineer
+          Multi-Cloud Engineer
         </motion.h2>
         <motion.p
           className="hero-tagline"
@@ -36,7 +45,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          Cloud engineering. Infrastructure as Code. Reliability at scale.
+          6+ years designing scalable cloud solutions across AWS & Azure. Infrastructure as Code. Reliability at scale.
         </motion.p>
 
         <motion.div
@@ -48,11 +57,14 @@ function Hero() {
           <a href="https://github.com/Chaitrapula" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FiGithub />
           </a>
-          <a href="https://linkedin.com/in/chaitra" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/chaitra-pula-b746a3135/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FiLinkedin />
           </a>
-          <a href="mailto:chaitra@example.com" aria-label="Email">
+          <a href="mailto:chaitrapula9@gmail.com" aria-label="Email">
             <FiMail />
+          </a>
+          <a href="tel:+918297179420" aria-label="Phone">
+            <FiPhone />
           </a>
         </motion.div>
 

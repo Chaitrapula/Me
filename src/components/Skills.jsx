@@ -1,20 +1,21 @@
 import { motion } from 'framer-motion'
-import { SiAmazonaws, SiMicrosoftazure, SiGooglecloud, SiTerraform, SiDocker, SiKubernetes, SiJenkins, SiGithubactions, SiPython, SiLinux, SiAnsible, SiPrometheus } from 'react-icons/si'
+import { FaAws, FaMicrosoft } from 'react-icons/fa'
+import { SiTerraform, SiDocker, SiKubernetes, SiJenkins, SiGithubactions, SiPython, SiLinux, SiNginx, SiPostgresql, SiPrometheus } from 'react-icons/si'
 import './Skills.css'
 
 const skills = [
-  { icon: SiAmazonaws, name: 'AWS', category: 'Cloud' },
-  { icon: SiMicrosoftazure, name: 'Azure', category: 'Cloud' },
-  { icon: SiGooglecloud, name: 'GCP', category: 'Cloud' },
+  { icon: FaAws, name: 'AWS', category: 'Cloud' },
+  { icon: FaMicrosoft, name: 'Azure', category: 'Cloud' },
   { icon: SiTerraform, name: 'Terraform', category: 'IaC' },
   { icon: SiDocker, name: 'Docker', category: 'Containers' },
   { icon: SiKubernetes, name: 'Kubernetes', category: 'Orchestration' },
   { icon: SiJenkins, name: 'Jenkins', category: 'CI/CD' },
   { icon: SiGithubactions, name: 'GitHub Actions', category: 'CI/CD' },
-  { icon: SiPython, name: 'Python', category: 'Languages' },
+  { icon: SiPython, name: 'Python', category: 'Scripting' },
   { icon: SiLinux, name: 'Linux', category: 'OS' },
-  { icon: SiAnsible, name: 'Ansible', category: 'Automation' },
-  { icon: SiPrometheus, name: 'Prometheus', category: 'Monitoring' },
+  { icon: SiNginx, name: 'Nginx', category: 'Web Server' },
+  { icon: SiPostgresql, name: 'PostgreSQL', category: 'Database' },
+  { icon: SiPrometheus, name: 'Monitoring', category: 'CloudWatch/Nagios' },
 ]
 
 function Skills() {

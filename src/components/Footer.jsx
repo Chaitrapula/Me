@@ -9,18 +9,18 @@ function Footer() {
           <a href="https://github.com/Chaitrapula" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FiGithub />
           </a>
-          <a href="https://linkedin.com/in/chaitra" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/chaitra-pula-b746a3135/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FiLinkedin />
           </a>
-          <a href="mailto:chaitra@example.com" aria-label="Email">
+          <a href="mailto:chaitrapula9@gmail.com" aria-label="Email">
             <FiMail />
           </a>
         </div>
         <p className="footer-text">
-          Built with <FiHeart className="heart-icon" /> by Chaitra
+          Built with <FiHeart className="heart-icon" /> by Chaitra Pula
         </p>
         <p className="footer-copyright">
-          © {new Date().getFullYear()} Chaitra. All rights reserved.
+          © {new Date().getFullYear()} Chaitra Pula. All rights reserved.
         </p>
       </div>
     </footer>

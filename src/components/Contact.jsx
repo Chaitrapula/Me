@@ -20,14 +20,14 @@ function Contact() {
               <FiMail className="contact-icon" />
               <div>
                 <h4>Email</h4>
-                <a href="mailto:chaitra@example.com">chaitra@example.com</a>
+                <a href="mailto:chaitrapula9@gmail.com">chaitrapula9@gmail.com</a>
               </div>
             </div>
             <div className="contact-item">
               <FiMapPin className="contact-icon" />
               <div>
                 <h4>Location</h4>
-                <p>India</p>
+                <p>Bengaluru, India</p>
               </div>
             </div>
           </div>
