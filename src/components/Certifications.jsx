@@ -20,7 +20,8 @@ function Certifications() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="section-title">Certifications</h2>
+        <span className="section-eyebrow">04 — Credentials</span>
+        <h2 className="section-title"><em>Certifications</em></h2>
         <p className="section-subtitle">Professional credentials</p>
 
         <div className="certs-grid">

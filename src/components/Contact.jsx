@@ -11,7 +11,8 @@ function Contact() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="section-title">Get In Touch</h2>
+        <span className="section-eyebrow">06 — Contact</span>
+        <h2 className="section-title">Get In <em>Touch</em></h2>
         <p className="section-subtitle">Let's build something together</p>
 
         <div className="contact-content">

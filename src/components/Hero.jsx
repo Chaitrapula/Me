@@ -29,7 +29,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          Chaitra Pula
+          Chaitra <em>Pula</em>
         </motion.h1>
         <motion.h2
           className="hero-title"
