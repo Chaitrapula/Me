@@ -18,9 +18,7 @@ function Navbar({ darkMode, setDarkMode }) {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="#" className="navbar-logo">
-          <span className="logo-bracket">&lt;</span>
-          Chaitra
-          <span className="logo-bracket"> /&gt;</span>
+          Chaitra<span className="logo-dot">.</span>
         </a>
 
         <div className={`navbar-links ${menuOpen ? 'open' : ''}`}>

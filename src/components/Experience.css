@@ -7,64 +7,75 @@
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--accent), var(--gradient-end));
+  top: 0.4rem;
+  bottom: 0.4rem;
+  width: 1px;
+  background: var(--border-strong);
 }
 
 .timeline-item {
   position: relative;
-  padding-left: 2rem;
-  margin-bottom: 3rem;
+  padding-left: 2.2rem;
+  margin-bottom: 2.6rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
 }
 
 .timeline-marker {
   position: absolute;
   left: -2.45rem;
-  top: 0.5rem;
-  width: 12px;
-  height: 12px;
+  top: 0.45rem;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 10px var(--accent-glow);
+  background: var(--bg-primary);
+  border: 1px solid var(--accent);
 }
 
 .timeline-content {
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 2rem;
-  transition: border-color 0.3s;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2.2rem;
+  transition: transform 0.3s;
+}
+
+.timeline-item:last-child .timeline-content {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .timeline-content:hover {
-  border-color: var(--accent);
+  transform: translateX(6px);
 }
 
 .timeline-period {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--accent);
 }
 
 .timeline-role {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin: 0.5rem 0 0.3rem;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.5rem 0 0.25rem;
+  color: var(--text-primary);
 }
 
 .timeline-company {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
   margin-bottom: 1rem;
 }
 
 .timeline-description {
   color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  font-size: 0.96rem;
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
 }
 
 .timeline-tech {
@@ -75,9 +86,17 @@
 
 .tech-tag {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  background: rgba(102, 126, 234, 0.15);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  transition: border-color 0.25s, color 0.25s;
+}
+
+.tech-tag:hover {
+  border-color: var(--accent-line);
   color: var(--accent);
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
 }

@@ -11,7 +11,8 @@ function About() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="section-title">About Me</h2>
+        <span className="section-eyebrow">01 — About</span>
+        <h2 className="section-title">About <em>Me</em></h2>
         <p className="section-subtitle">Multi-Cloud Engineer with 6+ years of experience</p>
 
         <div className="about-content">

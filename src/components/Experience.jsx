@@ -53,7 +53,8 @@ function Experience() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="section-title">Experience</h2>
+        <span className="section-eyebrow">03 — Career</span>
+        <h2 className="section-title"><em>Experience</em></h2>
         <p className="section-subtitle">My professional journey</p>
 
         <div className="timeline">

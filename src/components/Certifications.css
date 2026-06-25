@@ -1,6 +1,6 @@
 .certs-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .cert-card {
@@ -8,38 +8,43 @@
   gap: 1.5rem;
   align-items: flex-start;
   background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   padding: 2rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: border-color 0.3s, background 0.3s;
 }
 
 .cert-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 0 20px var(--accent-glow);
+  border-color: var(--accent-line);
+  background: var(--bg-card-hover);
 }
 
 .cert-icon {
-  font-size: 2.5rem;
-  color: #f0a500;
+  font-size: 2rem;
+  color: var(--accent);
   flex-shrink: 0;
+  margin-top: 0.2rem;
 }
 
 .cert-card h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 500;
   margin-bottom: 0.3rem;
+  color: var(--text-primary);
 }
 
 .cert-issuer {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .cert-description {
   color: var(--text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.7;
 }

@@ -35,7 +35,8 @@ function Projects() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="section-title">Projects</h2>
+        <span className="section-eyebrow">05 — Selected Work</span>
+        <h2 className="section-title"><em>Projects</em></h2>
         <p className="section-subtitle">Things I've built</p>
 
         <div className="projects-grid">
