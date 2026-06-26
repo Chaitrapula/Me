@@ -3,6 +3,7 @@ import { FiMapPin, FiGlobe, FiHome } from 'react-icons/fi'
 import { FaMountain } from 'react-icons/fa'
 import IndiaMap from './IndiaMap'
 import WorldGlobe from './WorldGlobe'
+import PhotoGallery from './PhotoGallery'
 import './Travel.css'
 
 const homeBase = { name: 'Bengaluru', region: 'Karnataka', coordinates: [77.5946, 12.9716], type: 'home' }
@@ -116,6 +117,8 @@ function Travel() {
             </div>
           </div>
         </div>
+
+        <PhotoGallery />
       </motion.div>
     </section>
   )
