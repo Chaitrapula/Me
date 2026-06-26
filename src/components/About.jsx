@@ -29,6 +29,12 @@ function About() {
               significantly accelerating delivery cycles. Passionate about delivering resilient,
               cost-effective, and innovative cloud solutions.
             </p>
+            <p>
+              Away from the cloud, I'm happiest on a trail or in a town I've never seen. I've trekked
+              Meeshapulimala and Kolukkumalai, travelled from Kerala's coast up to Tawang in the Northeast,
+              and crossed the Himalayas into Bhutan. Exploring new places keeps me curious, and I bring that
+              same curiosity back to the problems I solve at work.
+            </p>
           </div>
 
           <div className="about-highlights">

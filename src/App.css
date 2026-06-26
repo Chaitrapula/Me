@@ -1,23 +1,28 @@
 .app {
   position: relative;
   min-height: 100vh;
-  --bg-primary: #0d0f13;
-  --bg-secondary: #0f1218;
-  --bg-card: #14171d;
-  --bg-card-hover: #181c23;
-  --text-primary: #e9e8e3;
-  --text-secondary: #9a9ca3;
-  --text-faint: #63666e;
-  --accent: #c5b596;
-  --accent-soft: rgba(197, 181, 150, 0.1);
-  --accent-line: rgba(197, 181, 150, 0.45);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.16);
-  --gradient-start: #c5b596;
-  --gradient-end: #8a8f98;
-  --radius: 12px;
-  --font-primary: 'Sora', sans-serif;
-  --font-serif: 'Newsreader', Georgia, serif;
+  /* Default — black + orange */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111010;
+  --bg-card: #161413;
+  --bg-card-hover: #1e1b19;
+  --text-primary: #f0e7de;
+  --text-secondary: #ada498;
+  --text-faint: #756d64;
+  --accent: #fb923c;
+  --accent-bright: #f97316;
+  --accent-soft: rgba(251, 146, 60, 0.12);
+  --accent-line: rgba(251, 146, 60, 0.4);
+  --accent-glow: rgba(249, 115, 22, 0.4);
+  --trek: #fbbf24;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --gradient-start: #fb923c;
+  --gradient-end: #f97316;
+  --radius: 14px;
+  --font-primary: 'Space Grotesk', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-serif: 'Space Grotesk', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   background: var(--bg-primary);
   color: var(--text-primary);
@@ -26,20 +31,24 @@
 }
 
 .app.light {
-  --bg-primary: #f5f3ed;
-  --bg-secondary: #efece4;
+  /* Toggle — white + orange */
+  --bg-primary: #ffffff;
+  --bg-secondary: #fbf7f3;
   --bg-card: #ffffff;
-  --bg-card-hover: #faf8f3;
-  --text-primary: #1b1c1f;
-  --text-secondary: #55585f;
-  --text-faint: #8b8e95;
-  --accent: #8a6d3b;
-  --accent-soft: rgba(138, 109, 59, 0.1);
-  --accent-line: rgba(138, 109, 59, 0.4);
+  --bg-card-hover: #fff4ec;
+  --text-primary: #1b1510;
+  --text-secondary: #5f5a54;
+  --text-faint: #9b938a;
+  --accent: #ea580c;
+  --accent-bright: #c2410c;
+  --accent-soft: rgba(234, 88, 12, 0.1);
+  --accent-line: rgba(234, 88, 12, 0.4);
+  --accent-glow: rgba(234, 88, 12, 0.25);
+  --trek: #9a3412;
   --border: rgba(0, 0, 0, 0.1);
-  --border-strong: rgba(0, 0, 0, 0.18);
-  --gradient-start: #8a6d3b;
-  --gradient-end: #55585f;
+  --border-strong: rgba(0, 0, 0, 0.16);
+  --gradient-start: #f97316;
+  --gradient-end: #ea580c;
   background: var(--bg-primary);
   color: var(--text-primary);
 }
@@ -50,11 +59,13 @@
   pointer-events: none;
   z-index: -1;
   background:
-    radial-gradient(ellipse 55% 45% at 50% -8%, rgba(197, 181, 150, 0.07), transparent 70%),
-    radial-gradient(ellipse 45% 40% at 92% 108%, rgba(255, 255, 255, 0.025), transparent 70%);
+    radial-gradient(ellipse 55% 50% at 50% -10%, rgba(249, 115, 22, 0.18), transparent 70%),
+    radial-gradient(ellipse 40% 45% at 88% 8%, rgba(251, 146, 60, 0.12), transparent 70%),
+    radial-gradient(ellipse 45% 40% at 10% 100%, rgba(217, 119, 6, 0.1), transparent 70%);
 }
 
 .app.light .bg-particles {
   background:
-    radial-gradient(ellipse 55% 45% at 50% -8%, rgba(138, 109, 59, 0.08), transparent 70%);
+    radial-gradient(ellipse 55% 50% at 50% -10%, rgba(234, 88, 12, 0.09), transparent 70%),
+    radial-gradient(ellipse 40% 45% at 88% 8%, rgba(249, 115, 22, 0.06), transparent 70%);
 }
