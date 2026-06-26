@@ -4,12 +4,12 @@ slug: dirang
 place: "Dirang, Arunachal Pradesh"
 region: "Northeast India"
 date: 2025-09-18
-cover: /travel/dirang-01.jpg
-coverPos: "center 55%"
+cover: /travel/dirang-02.jpg
+coverPos: "center 35%"
 excerpt: "A green valley town where the road to Tawang slows down — apple orchards, a river in full monsoon spate, and a baby goat that stole the morning."
 gallery:
-  - /travel/dirang-01.jpg
   - /travel/dirang-02.jpg
+  - /travel/dirang-01.jpg
   - /travel/dirang-03.jpg
   - /travel/dirang-04.jpg
   - /travel/dirang-05.jpg
