@@ -82,7 +82,7 @@ function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <img src="/profile.jpg" alt="Chaitra Pula" />
+          <img src="/hero.jpg" alt="Chaitra running toward a waterfall in Arunachal Pradesh" />
         </motion.div>
       </div>
 
