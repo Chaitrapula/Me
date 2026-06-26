@@ -3,7 +3,7 @@ title: "Meeshapulimala: walking into the cloud line"
 slug: meeshapulimala
 place: "Munnar, Kerala"
 region: "Western Ghats"
-date: 2024-12-10
+date: 2026-02-16
 cover: /travel/travel-06.jpg
 coverPos: "center 38%"
 excerpt: "The second-highest peak in South India, where the trail climbs out of the tea slopes and straight into the clouds."
