@@ -3,7 +3,7 @@ title: "Kashmir in bloom"
 slug: kashmir
 place: "Srinagar, Kashmir"
 region: "North India"
-date: 2025-04-15
+date: 2026-04-15
 cover: /travel/travel-02.jpg
 excerpt: "A shikara on still water, a hillside of tulips, and snow that hadn't quite let go of spring."
 gallery:

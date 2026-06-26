@@ -3,7 +3,7 @@ title: "Dhanushkodi: the town the sea took back"
 slug: dhanushkodi
 place: "Dhanushkodi, Tamil Nadu"
 region: "South India"
-date: 2024-09-05
+date: 2025-12-15
 cover: /travel/travel-11.jpg
 excerpt: "Turquoise water on both sides, a ghost town at the end of the road, and birds that own the place now."
 gallery:

@@ -3,7 +3,7 @@ title: "The Taj at first light"
 slug: taj-mahal
 place: "Agra, Uttar Pradesh"
 region: "North India"
-date: 2025-01-15
+date: 2025-09-10
 cover: /travel/travel-01.jpg
 coverPos: "center 28%"
 excerpt: "You've seen the photo a thousand times. Then you stand in front of it at sunrise and understand why people keep coming."

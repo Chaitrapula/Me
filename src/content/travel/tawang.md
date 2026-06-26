@@ -3,7 +3,7 @@ title: "Tawang: prayer flags and thin air"
 slug: tawang
 place: "Tawang, Arunachal Pradesh"
 region: "Northeast India"
-date: 2025-02-20
+date: 2025-09-20
 cover: /travel/travel-04.jpg
 coverPos: "center 15%"
 excerpt: "Three thousand metres up, where the prayer flags never stop moving and a young monk taught me how to laugh at the cold."
