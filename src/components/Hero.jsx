@@ -39,13 +39,22 @@ function Hero() {
         >
           Multi-Cloud Engineer
         </motion.h2>
+        <motion.div
+          className="hero-now"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+        >
+          <span className="hero-now-dot" />
+          Currently at <strong>GitHub</strong> · Microsoft
+        </motion.div>
         <motion.p
           className="hero-tagline"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          6+ years designing scalable cloud solutions across AWS & Azure. Infrastructure as Code. Reliability at scale.
+          I handle the cloud on my screen, and try to reach the real ones by trekking up mountains.
         </motion.p>
 
         <motion.div

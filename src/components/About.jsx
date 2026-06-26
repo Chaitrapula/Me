@@ -18,16 +18,8 @@ function About() {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a Multi-Cloud Engineer with 6+ years of experience in designing and implementing
-              cloud solutions across AWS and Azure. I specialize in architecting scalable environments
-              using services like EC2, S3, Lambda, ALB, Auto Scaling, VPC, CloudWatch, and SageMaker
-              on AWS, and Azure VMs, Blob Storage, App Service, VNet, Azure Monitor, and OpenAI LLM on Azure.
-            </p>
-            <p>
-              Experienced in securing cloud environments with Security Groups, ACLs, VPNs, and network
-              segmentation. Expert in CI/CD automation using Azure DevOps, GitHub Actions, and pipelines,
-              significantly accelerating delivery cycles. Passionate about delivering resilient,
-              cost-effective, and innovative cloud solutions.
+              I'm a multi-cloud engineer, and I spend my days making AWS and Azure
+              infrastructure reliable, automated, and a little less chaotic.
             </p>
             <p>
               Away from the cloud, I'm happiest on a trail or in a town I've never seen. I've trekked
