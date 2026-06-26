@@ -27,5 +27,3 @@ Near the top you cross the cloud line. One minute the whole valley is laid out b
 - Carry water and snacks. The grassland has views, not shops.
 
 > The cloud on my laptop pays the bills. This is the one I climb for.
-
-*A first draft from the trail — the full route and timings to come.*

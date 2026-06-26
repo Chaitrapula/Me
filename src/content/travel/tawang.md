@@ -28,5 +28,3 @@ I spent a morning on the monastery steps watching the place wake up. A young mon
 - The drive is the trip. Don't rush it.
 
 > Some places you visit. Tawang you arrive at, slowly, and it changes the pace of everything after.
-
-*This is a starting draft from my photos and notes — I'll keep adding to it.*
