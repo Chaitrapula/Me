@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FiMapPin, FiGlobe, FiHome } from 'react-icons/fi'
+import { FiMapPin, FiGlobe, FiHome, FiArrowRight } from 'react-icons/fi'
 import { FaMountain } from 'react-icons/fa'
 import IndiaMap from './IndiaMap'
 import WorldGlobe from './WorldGlobe'
@@ -60,6 +60,10 @@ function Travel() {
         <span className="section-eyebrow">06 — Beyond Work</span>
         <h2 className="section-title"><em>Travel</em></h2>
         <p className="section-subtitle">Places I've wandered across India and beyond</p>
+
+        <a href="#/blog" className="travel-journal-link">
+          Read the travel journal <FiArrowRight />
+        </a>
 
         <div className="travel-maps">
           <div className="map-col">

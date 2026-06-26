@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useMemo } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import {
   FiSearch, FiArrowRight, FiUser, FiCpu, FiBriefcase, FiAward,
-  FiFolder, FiMapPin, FiMail, FiGithub, FiLinkedin, FiSun, FiMoon, FiCornerDownLeft,
+  FiFolder, FiMapPin, FiBookOpen, FiMail, FiGithub, FiLinkedin, FiSun, FiMoon, FiCornerDownLeft,
 } from 'react-icons/fi'
 import './CommandPalette.css'
 
@@ -20,6 +20,7 @@ function CommandPalette({ darkMode, setDarkMode }) {
     { id: 'certifications', label: 'Certifications', hint: 'Credentials', icon: FiAward, type: 'nav', target: '#certifications' },
     { id: 'projects', label: 'Projects', hint: 'Things I built', icon: FiFolder, type: 'nav', target: '#projects' },
     { id: 'travel', label: 'Travel', hint: 'Places I\'ve been', icon: FiMapPin, type: 'nav', target: '#travel' },
+    { id: 'journal', label: 'Travel Journal', hint: 'Read the blog', icon: FiBookOpen, type: 'nav', target: '#/blog' },
     { id: 'contact', label: 'Contact', hint: 'Get in touch', icon: FiMail, type: 'nav', target: '#contact' },
     { id: 'theme', label: 'Toggle theme', hint: 'Light / dark', icon: darkMode ? FiSun : FiMoon, type: 'action', run: () => setDarkMode(d => !d) },
     { id: 'github', label: 'GitHub', hint: 'github.com/Chaitrapula', icon: FiGithub, type: 'link', target: 'https://github.com/Chaitrapula' },
@@ -65,7 +66,16 @@ function CommandPalette({ darkMode, setDarkMode }) {
   const runAction = (action) => {
     if (!action) return
     if (action.type === 'nav') {
-      document.querySelector(action.target)?.scrollIntoView({ behavior: 'smooth' })
+      if (action.target.startsWith('#/')) {
+        window.location.hash = action.target
+      } else {
+        const el = document.querySelector(action.target)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' })
+        } else {
+          window.location.hash = action.target
+        }
+      }
     } else if (action.type === 'link') {
       window.open(action.target, action.target.startsWith('http') ? '_blank' : '_self', 'noopener')
     } else if (action.type === 'action') {

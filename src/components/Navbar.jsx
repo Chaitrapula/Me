@@ -2,36 +2,39 @@ import { useState } from 'react'
 import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi'
 import './Navbar.css'
 
-function Navbar({ darkMode, setDarkMode }) {
+function Navbar({ darkMode, setDarkMode, route = '/' }) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const onHome = !route.startsWith('/blog')
 
-  const links = [
+  const sectionLinks = [
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
     { href: '#experience', label: 'Experience' },
-    { href: '#certifications', label: 'Certifications' },
     { href: '#projects', label: 'Projects' },
     { href: '#travel', label: 'Travel' },
     { href: '#contact', label: 'Contact' },
   ]
 
+  const close = () => setMenuOpen(false)
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#" className="navbar-logo">
+        <a href="#/" className="navbar-logo" onClick={close}>
           Chaitra<span className="logo-dot">.</span>
         </a>
 
         <div className={`navbar-links ${menuOpen ? 'open' : ''}`}>
-          {links.map(link => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-            >
-              {link.label}
-            </a>
-          ))}
+          {onHome
+            ? sectionLinks.map((link) => (
+                <a key={link.href} href={link.href} onClick={close}>
+                  {link.label}
+                </a>
+              ))
+            : <a href="#/" onClick={close}>Home</a>}
+          <a href="#/blog" className={`nav-journal ${!onHome ? 'is-active' : ''}`} onClick={close}>
+            Journal
+          </a>
         </div>
 
         <div className="navbar-actions">

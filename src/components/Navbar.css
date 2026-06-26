@@ -118,3 +118,21 @@
     display: flex;
   }
 }
+
+.navbar-links .nav-journal {
+  color: var(--accent);
+  border: 1px solid var(--accent-line);
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+}
+
+.navbar-links .nav-journal:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.navbar-links .nav-journal.is-active {
+  background: var(--accent);
+  color: #0a0a0a;
+  border-color: var(--accent);
+}
