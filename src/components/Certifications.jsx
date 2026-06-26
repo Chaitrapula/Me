@@ -9,6 +9,18 @@ const certifications = [
     date: 'June 2023',
     description: 'Validates ability to design scalable, resilient systems on AWS and select the right services for various projects.',
   },
+  {
+    title: 'GitHub Foundations',
+    issuer: 'GitHub',
+    date: '',
+    description: 'Validates core knowledge of GitHub fundamentals — repositories, Git workflows, collaboration, issues, and project management.',
+  },
+  {
+    title: 'GitHub Actions',
+    issuer: 'GitHub',
+    date: '',
+    description: 'Validates expertise in building, testing, and automating CI/CD workflows with GitHub Actions.',
+  },
 ]
 
 function Certifications() {
@@ -37,7 +49,7 @@ function Certifications() {
               <FiAward className="cert-icon" />
               <div>
                 <h3>{cert.title}</h3>
-                <p className="cert-issuer">{cert.issuer} • {cert.date}</p>
+                <p className="cert-issuer">{cert.date ? `${cert.issuer} • ${cert.date}` : cert.issuer}</p>
                 <p className="cert-description">{cert.description}</p>
               </div>
             </motion.div>

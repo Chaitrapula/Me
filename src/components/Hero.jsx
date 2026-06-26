@@ -1,4 +1,4 @@
-import { FiArrowDown, FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi'
+import { FiArrowDown, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 import './Hero.css'
 
@@ -63,9 +63,15 @@ function Hero() {
           <a href="mailto:chaitrapula9@gmail.com" aria-label="Email">
             <FiMail />
           </a>
-          <a href="tel:+918297179420" aria-label="Phone">
-            <FiPhone />
-          </a>
+        </motion.div>
+
+        <motion.div
+          className="hero-hint"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+        >
+          Press <kbd>/</kbd> to explore
         </motion.div>
 
         <motion.a

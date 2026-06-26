@@ -37,9 +37,8 @@
 
 .footer-text {
   color: var(--text-secondary);
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   margin-bottom: 0.6rem;
   display: flex;
   align-items: center;
