@@ -25,5 +25,3 @@ The Tulip Garden below the Zabarwan hills opens for only a few weeks each spring
 Higher up, the snow still hadn't given way to spring. I found a patch of it and behaved like a child.
 
 > Go for the lake, stay for the way the light keeps changing its mind.
-
-*A first draft from the trip — more to come as I write it up.*

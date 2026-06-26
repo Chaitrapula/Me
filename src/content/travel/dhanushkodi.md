@@ -22,5 +22,3 @@ A cyclone wiped the town off the map in 1964, and it was never rebuilt. What's l
 The birds have taken over. Terns and gulls work the shallows in long lines, lifting all at once when a boat drifts too close. I could have watched them for hours, and more or less did.
 
 > Go at low light, early or late. The heat is real, and so is the magic.
-
-*A short first draft — there's a lot more to say about this stretch of coast.*

@@ -24,5 +24,3 @@ Shah Jahan built it for Mumtaz Mahal, and somehow a monument to grief ended up b
 I got my silhouette shot with the dome behind me and felt very pleased with myself. So did about three hundred other people. Worth it anyway.
 
 > Stand still for a minute before you reach for the camera. The photo will still be there.
-
-*A first draft from the trip — I'll add the details and the chaos of getting there soon.*
