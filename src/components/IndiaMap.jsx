@@ -29,6 +29,8 @@ function IndiaMap({ places }) {
 
         {places.map((p) => {
           const isHover = hovered === p.name
+          const cls = p.type === 'home' ? 'map-pin-home' : p.type === 'trek' ? 'map-pin-trek' : 'map-pin-dest'
+          const r = isHover ? 6 : p.type === 'home' ? 5 : 4
           return (
             <Marker
               key={p.name}
@@ -36,10 +38,10 @@ function IndiaMap({ places }) {
               onMouseEnter={() => setHovered(p.name)}
               onMouseLeave={() => setHovered(null)}
             >
-              <circle
-                r={isHover ? 6 : 4}
-                className={`map-pin ${p.type === 'trek' ? 'map-pin-trek' : 'map-pin-dest'}`}
-              />
+              {p.type === 'home' && (
+                <circle r={isHover ? 11 : 9} className="map-pin-home-ring" />
+              )}
+              <circle r={r} className={`map-pin ${cls}`} />
               {isHover && (
                 <g className="map-tip" transform="translate(0,-12)">
                   <text textAnchor="middle" className="map-tip-text">

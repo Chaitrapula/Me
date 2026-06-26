@@ -34,6 +34,14 @@
 
 .map-pin-dest { fill: var(--accent); }
 .map-pin-trek { fill: var(--trek); }
+.map-pin-home { fill: var(--text-primary); stroke: var(--accent); stroke-width: 1.5; }
+
+.map-pin-home-ring {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1;
+  opacity: 0.55;
+}
 
 .map-tip-text {
   font-family: var(--font-mono);
@@ -87,6 +95,7 @@
 
 .dot-dest { background: var(--accent); }
 .dot-trek { background: var(--trek); }
+.dot-home { background: var(--text-primary); border: 1.5px solid var(--accent); }
 
 .legend-name {
   color: var(--text-primary);
