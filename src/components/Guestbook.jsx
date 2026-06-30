@@ -51,7 +51,7 @@ function Guestbook() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <span className="section-eyebrow">08 — Guestbook</span>
+        <span className="section-eyebrow">07 — Guestbook</span>
         <h2 className="section-title">Leave a <em>Note</em></h2>
         <p className="section-subtitle">Say hi, drop feedback, or just leave your mark.</p>
 

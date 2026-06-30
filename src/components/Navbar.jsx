@@ -12,7 +12,6 @@ function Navbar({ darkMode, setDarkMode, route = '/' }) {
     { href: '#experience', label: 'Experience' },
     { href: '#projects', label: 'Projects' },
     { href: '#travel', label: 'Travel' },
-    { href: '#contact', label: 'Contact' },
     { href: '#guestbook', label: 'Guestbook' },
   ]
 

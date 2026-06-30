@@ -5,7 +5,6 @@ import Experience from '../components/Experience'
 import Certifications from '../components/Certifications'
 import Projects from '../components/Projects'
 import Travel from '../components/Travel'
-import Contact from '../components/Contact'
 import Guestbook from '../components/Guestbook'
 
 function Home() {
@@ -18,7 +17,6 @@ function Home() {
       <Certifications />
       <Projects />
       <Travel />
-      <Contact />
       <Guestbook />
     </>
   )

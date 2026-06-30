@@ -21,7 +21,6 @@ function CommandPalette({ darkMode, setDarkMode }) {
     { id: 'projects', label: 'Projects', hint: 'Things I built', icon: FiFolder, type: 'nav', target: '#projects' },
     { id: 'travel', label: 'Travel', hint: 'Places I\'ve been', icon: FiMapPin, type: 'nav', target: '#travel' },
     { id: 'journal', label: 'Travel Journal', hint: 'Read the blog', icon: FiBookOpen, type: 'nav', target: '#/blog' },
-    { id: 'contact', label: 'Contact', hint: 'Get in touch', icon: FiMail, type: 'nav', target: '#contact' },
     { id: 'guestbook', label: 'Guestbook', hint: 'Leave a note', icon: FiEdit3, type: 'nav', target: '#guestbook' },
     { id: 'theme', label: 'Toggle theme', hint: 'Light / dark', icon: darkMode ? FiSun : FiMoon, type: 'action', run: () => setDarkMode(d => !d) },
     { id: 'github', label: 'GitHub', hint: 'github.com/Chaitrapula', icon: FiGithub, type: 'link', target: 'https://github.com/Chaitrapula' },
