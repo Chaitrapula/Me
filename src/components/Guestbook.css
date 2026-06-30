@@ -1,0 +1,155 @@
+.gb-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.gb-input {
+  width: 100%;
+  padding: 0.95rem 1.1rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.25s, background 0.25s;
+}
+
+.gb-input::placeholder {
+  color: var(--text-faint);
+}
+
+.gb-input:focus {
+  border-color: var(--accent-line);
+  background: var(--bg-card-hover);
+}
+
+.gb-row {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.gb-row .gb-input {
+  flex: 1;
+}
+
+.gb-post {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1.4rem;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius);
+  color: #0a0a0a;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+.gb-post:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.gb-post:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.gb-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.gb-note {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  transition: border-color 0.25s;
+}
+
+.gb-note:hover {
+  border-color: var(--accent-line);
+}
+
+.gb-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-line);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.gb-body {
+  min-width: 0;
+}
+
+.gb-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+
+.gb-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.gb-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-faint);
+}
+
+.gb-message {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+@media (max-width: 560px) {
+  .gb-row {
+    flex-direction: column;
+  }
+  .gb-post {
+    justify-content: center;
+    padding: 0.8rem;
+  }
+}
+
+.gb-empty {
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
