@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useMemo } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import {
   FiSearch, FiArrowRight, FiUser, FiCpu, FiBriefcase, FiAward,
-  FiFolder, FiMapPin, FiBookOpen, FiMail, FiGithub, FiLinkedin, FiSun, FiMoon, FiCornerDownLeft,
+  FiFolder, FiMapPin, FiBookOpen, FiEdit3, FiMail, FiGithub, FiLinkedin, FiSun, FiMoon, FiCornerDownLeft,
 } from 'react-icons/fi'
 import './CommandPalette.css'
 
@@ -22,6 +22,7 @@ function CommandPalette({ darkMode, setDarkMode }) {
     { id: 'travel', label: 'Travel', hint: 'Places I\'ve been', icon: FiMapPin, type: 'nav', target: '#travel' },
     { id: 'journal', label: 'Travel Journal', hint: 'Read the blog', icon: FiBookOpen, type: 'nav', target: '#/blog' },
     { id: 'contact', label: 'Contact', hint: 'Get in touch', icon: FiMail, type: 'nav', target: '#contact' },
+    { id: 'guestbook', label: 'Guestbook', hint: 'Leave a note', icon: FiEdit3, type: 'nav', target: '#guestbook' },
     { id: 'theme', label: 'Toggle theme', hint: 'Light / dark', icon: darkMode ? FiSun : FiMoon, type: 'action', run: () => setDarkMode(d => !d) },
     { id: 'github', label: 'GitHub', hint: 'github.com/Chaitrapula', icon: FiGithub, type: 'link', target: 'https://github.com/Chaitrapula' },
     { id: 'linkedin', label: 'LinkedIn', hint: 'Connect with me', icon: FiLinkedin, type: 'link', target: 'https://www.linkedin.com/in/chaitra-pula-b746a3135/' },
