@@ -110,3 +110,15 @@
     gap: 2.5rem;
   }
 }
+
+.form-note {
+  margin-top: 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.form-note a {
+  color: var(--accent);
+}
