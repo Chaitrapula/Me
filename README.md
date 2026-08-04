@@ -1,6 +1,6 @@
 # Chaitra – Portfolio
 
-A modern, dark-themed personal portfolio site built with React + Vite, inspired by [kranthikiran.com](https://kranthikiran.com/).
+A modern, dark-themed personal portfolio site built with React + Vite.
 
 ## Features
 
