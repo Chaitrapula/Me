@@ -43,9 +43,16 @@ const treks = [
   { name: 'Shivagange', region: 'Karnataka', coordinates: [77.2167, 13.3389], type: 'trek' },
 ]
 
+const abroad = [
+  { name: 'Bhutan', region: 'Bhutan', coordinates: [90.4336, 27.5142], tag: 'Land of the Thunder Dragon — just across the Himalayas from home.' },
+  { name: 'Las Vegas', region: 'Nevada, USA', coordinates: [-115.1398, 36.1699], tag: 'Neon, desert nights, and the improbable city in the middle of nowhere.' },
+  { name: 'Red Rock Canyon', region: 'Nevada, USA', coordinates: [-115.4270, 36.1350], tag: 'Crimson sandstone cliffs just outside Vegas — the desert doing its quiet, spectacular thing.' },
+]
+
 const globeMarkers = [
   { name: 'Home', coordinates: [77.5946, 12.9716], home: true },
   { name: 'Bhutan', coordinates: [90.4336, 27.5142] },
+  { name: 'Las Vegas', coordinates: [-115.1398, 36.1699] },
 ]
 
 function Travel() {
@@ -115,9 +122,13 @@ function Travel() {
           <div className="globe-row">
             <WorldGlobe markers={globeMarkers} />
             <div className="abroad-info">
-              <h3 className="abroad-place">Bhutan</h3>
-              <p className="abroad-meta">Other country</p>
-              <p className="abroad-tag">Land of the Thunder Dragon — my one international trip so far, just across the Himalayas from home.</p>
+              {abroad.map((c) => (
+                <div key={c.name} className="abroad-place-item">
+                  <h3 className="abroad-place">{c.name}</h3>
+                  <p className="abroad-meta">{c.region}</p>
+                  <p className="abroad-tag">{c.tag}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

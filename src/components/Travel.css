@@ -248,3 +248,19 @@
   background: var(--accent-soft);
   transform: translateX(3px);
 }
+
+.abroad-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.abroad-place-item {
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.abroad-place-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
