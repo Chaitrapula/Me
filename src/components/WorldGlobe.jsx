@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import { ComposableMap, Geographies, Geography, Marker, Sphere, Graticule } from 'react-simple-maps'
 
 const GEO_URL = '/geo/countries-110m.json'
-const HIGHLIGHT = ['Bhutan', 'India']
+const HIGHLIGHT = ['Bhutan', 'India', 'United States of America']
 
 function WorldGlobe({ markers }) {
   const [rotation, setRotation] = useState([-88, -20, 0])
